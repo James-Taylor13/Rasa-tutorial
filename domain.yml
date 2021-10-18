@@ -1,0 +1,47 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- order
+- pizza
+- close
+slots:
+  order:
+    type: unfeaturized
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: |
+      Hello! How can I help you?
+  - text: |
+      Hi!
+  utter_ask_order:
+  - text: |
+      What is your order?
+  utter_anymore:
+  - text: |
+      Anything else?
+  utter_confirmed:
+  - text: |
+      Your order is in!
+  - text: |
+      You're all set!
+  utter_close:
+  - text: |
+      Bye. Thanks!
+  - text: |
+      Goodbye. Thank you!
+actions:
+- '...'
+- utter_greet
+- utter_confirmed
+- utter_ask_order
+- utter_close
+- utter_anymore
+forms:
+  order_form:
+    required_slots:
+      order:
+      - type: from_text

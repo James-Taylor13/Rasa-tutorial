@@ -1,0 +1,21 @@
+utter_greet:
+- text: |
+    Hello! How can I help you?
+- text: |
+    Hi!
+utter_ask_order:
+- text: |
+    What is your order?
+utter_anymore:
+- text: |
+    Anything else?
+utter_confirmed:
+- text: |
+    Your order is in!
+- text: |
+    You're all set!
+utter_close:
+- text: |
+    Bye. Thanks!
+- text: |
+    Goodbye. Thank you!

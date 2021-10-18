@@ -1,0 +1,14 @@
+rules:
+ - rule: activate order form
+   steps:
+   - intent: order
+   - action: order_form
+   - active_loop: order_form
+
+ - rule: submit form
+   condition:
+   - active_loop: order_form
+   steps:
+   - action: order_form
+   - active_loop: null
+   - action: utter_confirmed

@@ -1,0 +1,38 @@
+stories:
+ - story: greet and order
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: order
+   - action: order_form
+   - active_loop: order_form
+
+stories:
+ - story: greet, ask, order, close
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: order
+   - action: utter_ask_order
+   - intent: pizza
+   - action: utter_anymore
+   - intent: no
+   - action: utter_confirmed
+   - intent: close
+   - action: utter_close
+
+stories:
+ - story: greet, ask, order, close
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: order
+   - action: utter_ask_order
+   - intent: pizza
+   - action: utter_anymore
+   - intent: yes
+   - action: utter_ask_order
+   - intent: pizza
+   - action: utter_anymore
+   - intent: no
+   - action:

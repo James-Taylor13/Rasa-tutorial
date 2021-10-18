@@ -1,0 +1,46 @@
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hey
+    - Hello
+    - Good day
+    - Good morning
+
+- intent: order
+  examples: |
+    - I want to order a pizza
+    - Can I get a pizza?
+    - Can I order a pizza?
+    - Pizza please
+    - Pizza
+
+- intent: pizza
+  examples: |
+    - Small cheese pizza
+    - Medium cheese pizza
+    - Large cheese pizza
+    - X-large cheese pizza
+    - Small pepperoni pizza
+    - Medium pepperoni pizza
+    - Large pepperoni pizza
+    - X-large pepperoni pizza
+
+- intent: yes
+  examples: |
+    - Yes
+    - Yea
+    - Yeah
+
+- intent: no
+  examples: |
+    - No
+    - No that's all
+    - Nothing else
+    - No nothing else
+
+- intent: close
+  examples: |
+    - That is all I want
+    - Goodbye
+    - Bye
